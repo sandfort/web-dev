@@ -1,0 +1,10 @@
+<script>
+  var links = $("a.popup");
+
+  links.click(function(event) {
+      event.preventDefault();
+      window.open($(this).attr("href"));
+  });
+</script>
+<a href="holiday_pay" class="popup">Holiday Pay</a>
+

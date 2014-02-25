@@ -1,0 +1,18 @@
+<script>
+$(function() {
+  $(".popup").click(function(event) {
+    event.prventDefault();
+    var href = $(this).attr("htef");
+    var width = $(this).attr("data-width");
+    var height = $(this).attr("data-height");
+    var popup = window.open(href, "popup",
+      "height=" + height + ",width=" + width + "");
+  });
+});
+</script>
+
+<a href="help/holiday_pay.html"
+   data-width="600"
+   data-height="400"
+   title="Holiday Pay"
+   class="popup">Holiday pay</a>
