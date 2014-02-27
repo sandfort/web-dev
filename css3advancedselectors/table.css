@@ -1,0 +1,54 @@
+table {
+  width: 600px;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: none;
+}
+
+th {
+  background-color: #000;
+  color: #fff;
+}
+
+/* even rows */
+tr:nth-of-type(even) {
+  background-color: #F3F3F3;
+}
+
+/* odd rows */
+tr:nth-of-type(odd) {
+  background-color: #ddd;
+}
+
+/* cells in group from the second on */
+td:nth-child(n+2) {
+  text-align: right;
+}
+
+/* the last row in a group */
+tr:last-child {
+  font-weight: bolder;
+}
+
+/* the last column in every row */
+td:last-child {
+  font-weight: bolder;
+}
+
+/* the last cell in the last row of a group */
+tr:last-child td:last-child {
+  font-size: 24px;
+}
+
+/* the second-to-last row in a group */
+tr:nth-last-child(2) {
+  color:green;
+}
+
+/* all cells in last three rows in a group */
+tr:nth-last-child(-n+3) td {
+  text-align: right;
+}
+
