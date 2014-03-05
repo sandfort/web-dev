@@ -6,9 +6,16 @@
   </head>
   <body>
     <div id="target-area">
-      <p id="tagline">Hello World!</p>
+      <input type="button" id="ping" value="Ping"/>
     </div>
-    <script src="script.js">
+    <script>
+      document.getElementById('ping').addEventListener('click', function() {
+        var targetArea = document.getElementById('target-area');
+        var p = document.createElement('p');
+        var snippet = document.createTextNode('pong!');
+        p.appendChild(snippet);
+        targetArea.appendChild(p);
+      });
     </script>
   </body>
 </html>
