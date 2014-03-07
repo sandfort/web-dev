@@ -1,0 +1,35 @@
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8"/>
+    <Title>Hover Events</title>
+  </head>
+  <body>
+    <style type="text/css">
+    div#box {
+      width: 100px;
+      height: 100px;
+      text-align: center;
+      border-width: 2px;
+      border-color: black;
+      border-style: solid;
+    }
+
+    div.on {
+      background-color: green;
+    }
+    </style>
+    <div id="box">
+    </div>
+    <script type="text/javascript">
+    var box = document.getElementById('box');
+
+    box.addEventListener('mouseover', function() {
+      box.className = 'on';
+    });
+
+    box.addEventListener('mouseout', function() {
+      box.className = '';
+    });
+    </script>
+  </body>
+</html>
